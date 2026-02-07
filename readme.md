@@ -2,13 +2,12 @@
 
 Fine-tuned RoBERTa model for classifying NYC building code violations by category (8 classes) and severity (3 levels).
 
-## Result
 
 **See it in action:** [Live Demo](https://construction-code-violation-detector-bert-bkvmmvsnynas4vdk9dic.streamlit.app/)
 
 **Fine-Tuned Model (ViolationBERT):** [HuggingFace](https://huggingface.co/Rohan1103/ViolationBERT)
 
-
+## Results
 | Task | Macro F1 | Accuracy |
 |---|---|---|
 | Category | 0.8977 | 0.9620 |

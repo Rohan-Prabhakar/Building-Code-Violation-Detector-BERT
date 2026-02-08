@@ -272,7 +272,7 @@ elif mode == "Batch Analysis":
                 with col3:
                     st.metric("Avg Conf", f"{results_df['Cat Confidence'].mean():.1f}%")
 
-                def color_severity(val):s
+                def color_severity(val):
                     if val == 'HIGH':
                         return 'background-color: #ffcccc'
                     elif val == 'MEDIUM':

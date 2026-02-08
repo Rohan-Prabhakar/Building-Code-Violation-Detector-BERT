@@ -232,11 +232,11 @@ elif mode == "Batch Analysis":
 
                 def color_severity(val):
                     if val == 'HIGH':
-                        return 'background-color: #ffcccc'
+                        return 'background-color: #ffcccc; color: #8b0000'
                     elif val == 'MEDIUM':
-                        return 'background-color: #fff3cd'
+                        return 'background-color: #fff3cd; color: #856404'
                     else:
-                        return 'background-color: #d4edda'
+                        return 'background-color: #d4edda; color: #155724'
 
                 styled = results_df.style.applymap(color_severity, subset=['Severity'])
                 st.dataframe(styled, use_container_width=True, height=400)
@@ -272,7 +272,7 @@ elif mode == "Batch Analysis":
                 with col3:
                     st.metric("Avg Conf", f"{results_df['Cat Confidence'].mean():.1f}%")
 
-                def color_severity(val):
+                def color_severity(val):s
                     if val == 'HIGH':
                         return 'background-color: #ffcccc'
                     elif val == 'MEDIUM':

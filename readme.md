@@ -54,14 +54,14 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the notebooks in order:
+Run the notebooks in order for retraining:
 
 ```
 1. data prep and training.ipynb   # Downloads data, preprocesses, trains model
 2. evaluation.ipynb               # Evaluates on test set, error analysis, inference demo
 ```
 
-For the Streamlit demo:
+For the Streamlit demo of current fine tuned model:
 ```bash
 pip install streamlit
 streamlit run app/app.py
